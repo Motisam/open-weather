@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React, {useEffect, useState} from "react";
 
@@ -22,7 +21,7 @@ function App() {
                         <h1>Weather in {weather.name}</h1>
                         <p>Temperature: {weather.main.temp}°C</p>
                         <p>Humidity: {weather.main.humidity}%</p>
-                        {/*<p>Weather: {weather.weather[0].description}</p>*/}
+                        <p>Weather: {weather.weather[0].description}</p>
                     </div>
                 ) :
                 (<p>Weather Data is loading...</p>)
