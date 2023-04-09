@@ -4,7 +4,7 @@ import React, {useEffect, useState} from "react";
 function App() {
     const [weather, setWeather] = useState(null);
     const city = "Munich";
-    const apiKey = "cd9b4c6a5a6761e1af9c0ebe7c0e74b7"
+    const apiKey = "6dea0be94c6719f350cc66319a8207d2"
 
     useEffect(() => {
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
